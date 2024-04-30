@@ -2,7 +2,7 @@
 classDiagram
     class IAnimal {
         <<interface>>
-        defaultSound()
+        +defaultSound()
     }
     
     class Animal {
@@ -50,7 +50,7 @@ classDiagram
 ```
 interface IAnimal
 {
-    protected void defaultSound() { }
+    public void defaultSound() { }
 }
 
 public class Animal : IAnimal
